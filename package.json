@@ -1,0 +1,26 @@
+{
+  "name": "api_file_metadata",
+  "version": "1.0.0",
+  "description": "API project for freeCodeCamp",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "multer"
+  ],
+  "author": "Hayoun Lee",
+  "license": "MIT",
+  "engines": {
+    "node": "10.16.3"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "cors": "2.8.5",
+    "multer": "1.4.2",
+    "dotenv": "8.1.0"
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="../public/toypiano.ico"/>
+    <link rel="stylesheet" type="text/css" href="../public/style.css" />
+    <title>File Metadata</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>API Project: File Metadata Microservice</h1>
+            <h3>User Stories:</h3>
+            <ol>
+                <li>I can submit a form object that includes a file upload.</li>
+                <li>When I submit something, I will receive the file name, and size in bytes within the JSON response.</li>
+            </ol>    
+        </header>
+        <main>
+            <article>
+                <section>
+                    <header>
+                        <h3>Usage:</h3>
+                        <p>Please Upload a File ...</p>
+                    </header>
+                    <form id="upload" enctype="multipart/form-data" method="POST" action="/api/fileanalyse">
+                        <input id="fileInput" type="file" name="upfile" required>
+                        <button id="submitFile" type="submit">Upload</button>
+                    </form>
+                </section>
+            </article>
+            <article id="pane"></article>
+            <footer>
+                <p>by</p>
+                <a href="https://github.com/toypiano"> toypiano</a>
+            </footer>
+        </main>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/filesize/4.1.2/filesize.min.js'></script>
+    <script src="../public/client.js"></script>    
+</body>
+</html>
